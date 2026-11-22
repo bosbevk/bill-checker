@@ -1,0 +1,137 @@
+<title>Klopdit brand guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&family=Martian+Mono:wght@400;700&display=swap">
+<style>
+/* Layout: one reading column on the meter's pale face; pictures break out to a wider measure */
+:root{--bg:#f3f6f8;--card:#ffffff;--fg:#0f1b2d;--muted:#5a6676;--line:#d9e0e6;--blue:#1463c9;--red:#c2331f;--red-soft:#fbe6e2;--blue-soft:#e3edf9;
+  --sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Martian Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0b1320;--card:#15233a;--fg:#eef3f8;--muted:#a3b1c2;--line:#26364f;--blue:#6aa8f5;--red:#f08a78;--red-soft:#3a1a14;--blue-soft:#15294a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1320;--card:#15233a;--fg:#eef3f8;--muted:#a3b1c2;--line:#26364f;--blue:#6aa8f5;--red:#f08a78;--red-soft:#3a1a14;--blue-soft:#15294a;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--sans);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:44px 80px}
+.wrap{max-width:780px;margin:0 auto}.wide{max-width:1120px;margin:0 auto}
+h1{font-weight:800;font-size:clamp(34px,6vw,52px);line-height:1.03;letter-spacing:-.03em;margin:36px 0 16px;text-wrap:balance}
+h2{font-weight:800;font-size:28px;line-height:1.12;letter-spacing:-.025em;margin:68px 0 10px;text-wrap:balance}
+h3{font-size:18px;margin:30px 0 4px}
+p,li{max-width:68ch}a{color:var(--blue)}
+.lede{font-size:19px;color:var(--muted)}
+.wm{display:block;height:74px;max-width:100%}
+.note{background:var(--blue-soft);border-radius:12px;padding:16px 20px;margin:24px 0}
+.marks{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-end;margin:20px 0}
+.marks figure{margin:0;font-size:13px;color:var(--muted);text-align:center}
+.marks img{display:block;margin:0 auto 8px}
+.onink{background:#0f1b2d;border-radius:12px;padding:24px 28px;display:inline-block}
+.sw{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.sw div{border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--card);font-size:13px;min-width:0}
+.sw i{display:block;height:68px}.sw span{display:block;padding:8px 10px;line-height:1.4}.sw b{display:block;font-size:14px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.spec{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin:16px 0}
+.spec .h{font-weight:800;font-size:34px;letter-spacing:-.03em;line-height:1.1;margin:0 0 8px}
+.spec .n{font:700 22px var(--mono);margin:10px 0 0}
+.rows{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:16px 0;max-width:420px}
+.rows div{display:flex;padding:13px 18px;border-bottom:1px solid var(--line);font-size:16px}
+.rows div:last-child{border-bottom:0}.rows b{margin-left:auto;font:700 13px/1.9 var(--mono);color:var(--blue)}
+.rows .look{background:var(--red-soft)}.rows .look b{color:var(--red)}
+figure.pic{margin:18px 0}figure.pic img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:700px){.shots{grid-template-columns:repeat(2,1fr)}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+@media (max-width:700px){.two{grid-template-columns:1fr}}
+.say{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:600px){.say{grid-template-columns:1fr}}
+.say>div{border-radius:12px;padding:16px 20px;min-width:0;background:var(--card);border:1px solid var(--line)}
+.say h4{margin:0 0 6px;font-size:15px}.say ul{margin:0;padding-left:18px;font-size:15px}
+.tbl{overflow-x:auto;margin:14px 0}table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--muted);font-weight:600}
+.src{font-size:14px}.src li{margin:4px 0}
+code{font-family:var(--mono);font-size:.85em}
+</style>
+
+<div class="wrap">
+<img class="wm" src="a/wordmark.svg" alt="Klopdit, set in a water meter's number wheels: four white, three red">
+<h1>Klopdit's brand guide</h1>
+<p class="lede">What the bill checker looks and sounds like, and what is fixed. You picked the meter's wheels on 22 November 2026. Every store image, card and flyer has been redrawn in it, and the name and icon are now outlines that need no font.</p>
+<div class="note">Klopdit is still the working name; that pick is open. If the name changes, the wheels take the new letters and everything else here holds. All readings and accounts in the pictures are examples.</div>
+
+<h2>The idea</h2>
+<p>Most of a water bill comes from one object: the meter outside, with its row of number wheels. The City of Cape Town's own page says "On all traditional water meters, black numbers represent kilolitres and red numbers represent litres." The brand is those wheels. The name is set in them, four black and three red, and the app's icon is one wheel that has rolled to a tick. No rival has a mark at all, and none uses the meter.</p>
+
+<h2>The mark</h2>
+<div class="marks">
+<figure><img src="a/icon-rounded.svg" width="128" height="128" alt="The app icon">The icon</figure>
+<figure><img src="a/icon-rounded.svg" width="48" height="48" alt="">48</figure>
+<figure><img src="a/icon-rounded.svg" width="24" height="24" alt="">24</figure>
+<figure><img src="a/icon-rounded.svg" width="16" height="16" alt="">16</figure>
+<figure><img src="a/icon-one-colour.svg" width="64" height="64" alt="The icon in one colour">One colour</figure>
+<figure><span class="onink"><img src="a/wordmark.svg" height="44" alt="The wordmark on ink" style="margin:0"></span><br>On ink, the frame disappears</figure>
+</div>
+<p>The wordmark is never smaller than 120 pixels wide, because below that the letters fill in; the icon takes over there, and it reads down to 16 pixels. Leave one wheel's width of clear space around either. The first four wheels are always white with ink letters and the last three always red with white letters.</p>
+<p>Never stretch or tilt the mark, never change which wheels are red, never add a shadow or a glow, and never set the name in wheels of another colour.</p>
+
+<h2>Colour</h2>
+<div class="sw">
+<div><i style="background:#0f1b2d"></i><span><b>Ink</b><span class="mono">#0f1b2d</span><br>text, dark grounds</span></div>
+<div><i style="background:#f3f6f8"></i><span><b>Face</b><span class="mono">#f3f6f8</span><br>the page; ink on it 15.9</span></div>
+<div><i style="background:#1463c9"></i><span><b>Water blue</b><span class="mono">#1463c9</span><br>what you press; white 5.7</span></div>
+<div><i style="background:#c2331f"></i><span><b>Wheel red</b><span class="mono">#c2331f</span><br>the red wheels; white 5.6</span></div>
+<div><i style="background:#fbe6e2"></i><span><b>Red tint</b><span class="mono">#fbe6e2</span><br>a line to look at; red 4.6</span></div>
+<div><i style="background:#e3edf9"></i><span><b>Blue tint</b><span class="mono">#e3edf9</span><br>a note, not a problem</span></div>
+<div><i style="background:#5a6676"></i><span><b>Grey</b><span class="mono">#5a6676</span><br>small labels; on face 5.4</span></div>
+<div><i style="background:#0b1320"></i><span><b>Night</b><span class="mono">#0b1320</span><br>the dark ground; text 16.7</span></div>
+</div>
+<p>Every text pair passes WCAG AA for normal text, 4.5 to 1, worked out from the values. Red is part of the brand, so it is never an alarm. A line that doesn't match gets the red tint and two words, "look here", never a red screen. A jump in use where the sums are right is blue, because nothing is wrong. In the dark, blue becomes <span class="mono">#6aa8f5</span> and red <span class="mono">#f08a78</span>, both 7.6 to 1 on the ground; this page shows them if your device is set to dark.</p>
+<div class="rows"><div>Property rates<b>adds up</b></div><div>Electricity<b>adds up</b></div><div class="look">Water<b>look here</b></div></div>
+
+<h2>Type</h2>
+<div class="spec"><p class="h">Klop jou munisipale rekening?</p><p style="margin:0">Schibsted Grotesk sets the words: weight 800 with tight spacing for headings, 400 for reading, 600 on buttons.</p><p class="n">38 kL &nbsp; R 1 204,60 &nbsp; 0014</p><p style="margin:6px 0 0">Martian Mono sets every number, reading and amount, and the two status words. It never sets a paragraph.</p></div>
+<p>A picture holds at most three sizes of text, and no label is set in spaced-out capitals.</p>
+
+<h2>The wheels in the app</h2>
+<div class="marks"><figure><img src="a/reading-0038.svg" height="56" alt="A reading of 0038 on wheels">Billed, estimated</figure><figure><img src="a/reading-0014.svg" height="56" alt="A reading of 0014 on wheels">Your meter photo</figure></div>
+<p>A meter reading is always shown on four wheels, so the difference between what was billed and what the meter says needs no explaining. While a bill is being checked the wheels may roll and settle on the result. With reduced motion switched on, they don't move.</p>
+
+<h2>How it talks</h2>
+<p>Like a neighbour who is good with numbers: calm, exact, on your side, never angry at the municipality. The sum comes before the opinion. Afrikaans leads in Swartland and Overstrand, and English sits beside it.</p>
+<div class="tbl"><table>
+<tr><th>Where</th><th>Afrikaans</th><th>English</th></tr>
+<tr><td>The one line</td><td>Klop jou munisipale rekening?</td><td>Does your municipal bill add up?</td></tr>
+<tr><td>A line matches</td><td>klop</td><td>adds up</td></tr>
+<tr><td>A line doesn't</td><td>kyk hier</td><td>look here</td></tr>
+<tr><td>Use jumped</td><td>Jou verbruik het gespring, en die som is reg.</td><td>Your use jumped, and the sum is right.</td></tr>
+<tr><td>The letter</td><td>Jy kyk dit na, en jy stuur dit self.</td><td>You check it, and you send it yourself.</td></tr>
+</table></div>
+<div class="say">
+<div><h4>It always says</h4><ul><li>An example is an example.</li><li>A draft letter, for you to check and send.</li><li>Information, not legal advice.</li><li>Klopdit is not a municipality or part of one.</li></ul></div>
+<div><h4>It never says</h4><ul><li>You'll get money back.</li><li>Your municipality is overcharging you.</li><li>Anything like "AI lawyer".</li><li>"Free", "best" or "new" on a store image.</li></ul></div>
+</div>
+<p>Google Play asks an app that passes on government information to name its sources in the listing and to make clear it "doesn't represent a government or political entity". So the store listing links each municipality's tariff book, and the "not a municipality" line stays on everything.</p>
+</div>
+
+<div class="wide">
+<div class="wrap"><h2>The images, redrawn</h2><p>Each is drawn at the size it is used, by a script kept beside it, so a change of name or words redraws all of them.</p></div>
+<figure class="pic"><img src="a/play-feature-1024x500.png" alt="Play feature graphic: the wordmark, Does your municipal bill add up, and a map with Swartland, Cape Town and Overstrand picked out"><figcaption>Google Play feature graphic, 1024 × 500.</figcaption></figure>
+<div class="shots">
+<figure class="pic"><img src="a/s-screen-1-photo.png" alt="Screenshot: take a photo of your municipal bill"><figcaption>The photo</figcaption></figure>
+<figure class="pic"><img src="a/s-screen-2-check.png" alt="Screenshot: every line worked out again, with the two readings on wheels"><figcaption>The check</figcaption></figure>
+<figure class="pic"><img src="a/s-screen-3-letter.png" alt="Screenshot: a drafted dispute letter"><figcaption>The letter</figcaption></figure>
+<figure class="pic"><img src="a/s-screen-4-usage.png" alt="Screenshot: water use by month with a jump in October"><figcaption>Use over time</figcaption></figure>
+</div>
+<figure class="pic"><img src="a/s-facebook-card.png" alt="Facebook card: Klop jou munisipale rekening, with the map"><figcaption>Facebook link card, 1200 × 630, drawn at twice that. Boundaries from the Municipal Demarcation Board via geoBoundaries, CC BY 3.0 IGO.</figcaption></figure>
+<div class="two">
+<figure class="pic"><img src="a/facebook-testers.png" alt="Square card on ink: Help us test it"><figcaption>The tester call, 1080 × 1080.</figcaption></figure>
+<figure class="pic"><img src="a/s-flyer-a5.png" alt="A5 flyer, Afrikaans first with English under each step"><figcaption>A5 flyer, Afrikaans first, drawn at 300 dpi.</figcaption></figure>
+</div>
+</div>
+
+<div class="wrap">
+<h2>Still to check</h2>
+<p>Nobody has yet looked at this beside the three municipalities' logos: their sites refused the image files, so that needs your eyes or a screenshot of each. The one thing seen is that Swartland's site sets a dark green, <span class="mono">#004d40</span>, as its colour, which is far from ours. The Afrikaans wording needs a first-language reader. Apple's screenshot sizes and the two fonts' licences were not read today.</p>
+
+<h2>Sources</h2>
+<ul class="src">
+<li>The meter: City of Cape Town, <a href="https://www.capetown.gov.za/Family%20and%20home/residential-utility-services/residential-water-and-sanitation-services/water-meter-readings">Water meter readings</a>; Overstrand, <a href="https://www.overstrand.gov.za/how-do-i-read-my-water-meter/">How do I read my water meter?</a></li>
+<li>Rivals read 2026-11-22: <a href="https://www.billcheck.co.za/">BillCheck SA</a>, <a href="https://munichecker.com/">Munichecker</a>, <a href="https://ourpower.co.za/tools/municipal-bill-dispute">OurPower</a>; and <a href="https://www.taxtim.com/za/">TaxTim</a> for the green.</li>
+<li>Google Play: <a href="https://support.google.com/googleplay/android-developer/answer/9514050?hl=en">apps that communicate government information</a>, <a href="https://support.google.com/googleplay/android-developer/answer/9866151?hl=en">preview assets</a>.</li>
+<li>Contrast: W3C, <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">WCAG 2.2</a>. Swartland's colour: <a href="https://swartland.org.za/">swartland.org.za</a>.</li>
+</ul>
+</div>

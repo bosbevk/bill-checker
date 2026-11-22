@@ -6,6 +6,12 @@ municipality's own tariffs, and drafts the dispute for the resident to send. It 
 in the framework's repository,
 [F171 The bill checker](https://github.com/bosbevk/louis-agent/blob/main/src/docs/plans/F171-the-bill-checker.md).
 
+## The brand
+
+What the app looks and sounds like is in [docs/brand](docs/brand/README.md): the mark, the colours, the type and
+the voice, with the marks as SVG and the store and social images. Klopdit is a working name until the name is
+picked.
+
 ## Licence
 
 **All rights reserved.** This repository is public so that it can be read. [LICENSE](LICENSE) grants nothing: nobody

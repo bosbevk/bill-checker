@@ -1,0 +1,117 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&family=Martian+Mono:wght@400;700&display=swap">
+<style>
+:root{--ink:#0f1b2d;--face:#f3f6f8;--white:#fff;--blue:#1463c9;--red:#c2331f;--red-soft:#fbe6e2;--blue-soft:#e3edf9;--grey:#5a6676;--line:#d9e0e6}
+*{box-sizing:border-box}body{margin:0;font-family:"Schibsted Grotesk",system-ui,sans-serif;color:var(--ink);background:#999}
+.a{position:relative;overflow:hidden;background:var(--face);margin:0 0 40px}
+.mono{font-family:"Martian Mono",monospace}
+h1,h2{font-weight:800;letter-spacing:-.03em;margin:0;text-wrap:balance}
+#icon{width:1024px;height:1024px}#icon img{width:1024px;height:1024px;display:block}
+/* feature */
+#feature{width:1024px;height:500px}
+#feature .t{position:absolute;left:64px;top:74px;width:520px}
+#feature img.wm{height:64px;display:block}
+#feature h1{font-size:50px;line-height:1.03;margin:44px 0 16px}
+#feature p{font-size:23px;line-height:1.35;margin:0;color:var(--grey)}
+#feature .m{position:absolute;right:6px;top:10px;width:470px;height:480px}
+/* shots */
+.shot{width:1080px;height:1920px;background:var(--ink)}
+.shot .cap{height:380px;padding:96px 80px 0;color:#fff}
+.shot .cap h2{font-size:74px;line-height:1.04}
+.phone{position:absolute;left:80px;right:80px;top:400px;bottom:0;background:var(--face);border-radius:56px 56px 0 0;overflow:hidden}
+.hdr{display:flex;align-items:center;gap:20px;padding:40px 48px 30px;background:#fff;border-bottom:2px solid var(--line);font-size:34px;font-weight:800;letter-spacing:-.02em}
+.hdr img{width:68px;height:68px}.hdr span{margin-left:auto;font-size:26px;color:var(--grey);font-weight:400;letter-spacing:0}
+.body{padding:40px 48px}
+.ex{font-size:26px;color:var(--grey);margin:0 0 20px}
+.row{display:flex;align-items:center;padding:30px 0;border-bottom:2px solid var(--line);font-size:34px}
+.row b{margin-left:auto;font:700 26px "Martian Mono",monospace;color:var(--blue)}
+.row.look{background:var(--red-soft);margin:0 -48px;padding:30px 48px;border-bottom:0}.row.look b{color:var(--red)}
+.read{display:flex;gap:40px;margin-top:36px;font-size:26px;color:var(--grey)}
+.read div{display:flex;flex-direction:column;gap:12px}.read img{height:84px}
+.note{font-size:34px;line-height:1.35;margin:36px 0 0}
+.btn{margin-top:44px;background:var(--blue);color:#fff;border-radius:18px;padding:30px;text-align:center;font-size:34px;font-weight:600}
+.cam{margin:40px 48px;height:900px;border-radius:32px;background:#1c2a3f;position:relative}
+.cam .doc{position:absolute;left:90px;right:90px;top:80px;bottom:120px;background:#fff;border-radius:6px;transform:rotate(-2deg);padding:56px 48px}
+.cam .doc i{display:block;height:20px;background:#dfe5ea;border-radius:4px;margin:0 0 26px}
+.cam .corner{position:absolute;width:90px;height:90px;border:8px solid #fff}
+.shutter{width:150px;height:150px;border-radius:50%;border:12px solid var(--ink);background:#fff;position:absolute;left:50%;bottom:-210px;transform:translateX(-50%)}
+.letter{border:2px solid var(--line);border-radius:14px;padding:40px;font-size:26px;line-height:1.5;background:#fff}
+.letter .s{font-weight:600;margin-bottom:18px}.letter p{margin:0 0 18px}
+.chart{display:flex;align-items:flex-end;gap:22px;height:520px;border-bottom:2px solid var(--ink)}
+.chart div{flex:1;background:#b9d2f1;border-radius:8px 8px 0 0}.chart div.hi{background:var(--blue)}
+.months{display:flex;gap:22px;font:400 26px "Martian Mono",monospace;color:var(--grey);margin-top:14px}.months span{flex:1;text-align:center}
+.alert{margin-top:40px;background:var(--blue-soft);border-radius:14px;padding:36px;font-size:34px;line-height:1.35}
+/* fb */
+#fb{width:1200px;height:630px}
+#fb .t{position:absolute;left:72px;top:76px;width:600px}
+#fb img.wm{height:72px;display:block}
+#fb h1{font-size:58px;line-height:1.03;margin:52px 0 16px}
+#fb .en{font-size:30px;font-weight:600;color:var(--blue);margin:0 0 22px}
+#fb p{font-size:26px;line-height:1.4;margin:0;color:var(--grey)}
+#fb .m{position:absolute;right:20px;top:30px;width:560px;height:520px}
+.lab{position:absolute;font:700 20px "Martian Mono",monospace;color:var(--ink);background:var(--face);padding:3px 8px;border-radius:5px}
+/* testers */
+#tester{width:1080px;height:1080px;background:var(--ink);color:#fff;padding:96px}
+#tester img.wm{height:96px;display:block}
+#tester h1{font-size:104px;line-height:1;letter-spacing:-.04em;margin:110px 0 40px}
+#tester p{font-size:38px;line-height:1.4;margin:0 0 24px;color:#d5deea;max-width:860px}
+/* flyer */
+#flyer{width:874px;height:1240px;padding:64px}
+#flyer img.wm{height:72px;display:block}
+#flyer h1{font-size:60px;line-height:1.03;margin:52px 0 10px}
+#flyer .en{font-size:36px;line-height:1.1;font-weight:600;color:var(--blue);margin:0 0 48px}
+#flyer ol{list-style:none;padding:0;margin:0;display:grid;gap:22px}
+#flyer li{display:flex;gap:24px;font-size:24px;line-height:1.35}
+#flyer li b{flex:none;width:44px;height:58px;border-radius:5px;display:grid;place-items:center;font:700 24px "Martian Mono",monospace;color:var(--ink);background:linear-gradient(#c9d0d6,#fff 22%,#fff 78%,#c9d0d6);box-shadow:0 0 0 5px var(--ink)}
+#flyer li span{padding-top:2px}#flyer li i{display:block;font-style:normal;color:var(--grey)}
+#flyer .m{position:absolute;right:48px;bottom:178px;width:310px;height:288px}
+#flyer .foot{position:absolute;left:64px;right:64px;bottom:52px;border-top:2px solid var(--ink);padding-top:18px;font-size:24px;color:var(--grey);line-height:1.35}
+</style></head><body>
+
+<div class="a" id="icon"><img src="icon-square.svg" alt=""></div>
+
+<div class="a" id="feature"><div class="t"><img class="wm" src="wordmark.svg" alt="Klopdit"><h1>Does your municipal bill add up?</h1><p>Photograph it. Every line is worked out again from your municipality's own tariffs.</p></div><img class="m" src="map-light.svg" alt=""></div>
+
+<div class="a shot" id="shot1"><div class="cap"><h2>Take a photo of your municipal bill.</h2></div>
+<div class="phone"><div class="hdr"><img src="icon-rounded.svg" alt="">Klopdit<span>New check</span></div>
+<div class="cam"><div class="doc"><i style="width:40%;height:34px"></i><i></i><i style="width:80%"></i><i></i><i style="width:70%"></i><i style="width:90%"></i><i></i><i style="width:60%"></i><i style="width:85%"></i><i style="width:75%"></i></div>
+<div class="corner" style="left:60px;top:50px;border-right:0;border-bottom:0"></div><div class="corner" style="right:60px;top:50px;border-left:0;border-bottom:0"></div><div class="corner" style="left:60px;bottom:90px;border-right:0;border-top:0"></div><div class="corner" style="right:60px;bottom:90px;border-left:0;border-top:0"></div>
+<div class="shutter"></div></div></div></div>
+
+<div class="a shot" id="shot2"><div class="cap"><h2>Every line, worked out again.</h2></div>
+<div class="phone"><div class="hdr"><img src="icon-rounded.svg" alt="">Klopdit<span>Swartland</span></div>
+<div class="body"><p class="ex">Example account, October 2026</p>
+<div class="row">Property rates<b>adds up</b></div><div class="row">Refuse removal<b>adds up</b></div><div class="row">Sewerage<b>adds up</b></div><div class="row">Electricity<b>adds up</b></div><div class="row look">Water<b>look here</b></div>
+<div class="read"><div>Billed, estimated<img src="reading-0038.svg" alt="0038"></div><div>Your meter photo<img src="reading-0014.svg" alt="0014"></div></div>
+<p class="note">The bill charges 38 kL on an estimated reading. Your meter shows 14 kL. The rest adds up.</p>
+<div class="btn">See the sum</div></div></div></div>
+
+<div class="a shot" id="shot3"><div class="cap"><h2>A dispute letter, drafted for you to send.</h2></div>
+<div class="phone"><div class="hdr"><img src="icon-rounded.svg" alt="">Klopdit<span>Draft</span></div>
+<div class="body"><p class="ex">Example letter</p><div class="letter"><div class="s">Dispute of a specific amount, section 102(2) of the Municipal Systems Act</div>
+<p>I dispute the water charge on my account for October 2026. It is based on an estimated reading of 38 kL. My meter read 14 kL on 2 November (photo attached).</p>
+<p>Please correct the account. I am paying the undisputed balance.</p></div>
+<p class="note">You check it, and you send it yourself. Klopdit never sends anything for you.</p>
+<div class="btn">Copy the letter</div></div></div></div>
+
+<div class="a shot" id="shot4"><div class="cap"><h2>See your water and lights, month by month.</h2></div>
+<div class="phone"><div class="hdr"><img src="icon-rounded.svg" alt="">Klopdit<span>Water</span></div>
+<div class="body"><p class="ex">Example, kilolitres a month</p>
+<div class="chart"><div style="height:30%"></div><div style="height:34%"></div><div style="height:28%"></div><div style="height:32%"></div><div style="height:31%"></div><div class="hi" style="height:84%"></div></div>
+<div class="months"><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div>
+<div class="alert"><b>Your use jumped, and the sum is right.</b> Look for a leak first: close every tap and watch the meter for an hour.</div></div></div></div>
+
+<div class="a" id="fb"><div class="t"><img class="wm" src="wordmark.svg" alt="Klopdit"><h1>Klop jou munisipale rekening?</h1><p class="en">Does your municipal bill add up?</p><p>A phone app for Cape Town, Swartland and Overstrand. Coming soon.</p></div>
+<div class="m"><img src="map-light.svg" alt="" style="width:100%;height:100%">
+<span class="lab" style="left:300px;top:126px">Swartland</span><span class="lab" style="left:300px;top:286px">Cape Town</span><span class="lab" style="left:392px;top:440px">Overstrand</span></div></div>
+
+<div class="a" id="tester"><img class="wm" src="wordmark.svg" alt="Klopdit"><h1>Help us test it.</h1><p>We need people who pay a municipal account in Cape Town, Swartland or Overstrand to try the app for two weeks before it opens to everyone.</p><p>Comment below or send us a message.</p></div>
+
+<div class="a" id="flyer"><img class="wm" src="wordmark.svg" alt="Klopdit">
+<h1>Klop jou munisipale rekening?</h1><p class="en">Does your municipal bill add up?</p>
+<ol><li><b>1</b><span>Neem 'n foto van jou rekening, of maak die PDF oop.<i>Take a photo of your bill, or open the PDF.</i></span></li>
+<li><b>2</b><span>Elke lyn word weer uitgewerk volgens jou munisipaliteit se tariewe.<i>Every line is worked out again from your municipality's tariffs.</i></span></li>
+<li><b>3</b><span>Is 'n lyn verkeerd, kry jy die som en 'n konsepbrief om te stuur.<i>If a line is wrong, you get the sum and a draft letter to send.</i></span></li></ol>
+<img class="m" src="map-light.svg" alt="">
+<div class="foot">Coming soon to Android and iPhone, for Cape Town, Swartland and Overstrand. Information, not legal advice. Klopdit is not a municipality or part of one.</div></div>
+</body></html>
