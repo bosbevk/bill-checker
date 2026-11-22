@@ -1,0 +1,19 @@
+Copyright (c) 2026 bosbevk. All rights reserved.
+
+This repository and everything in it (the source code, documentation, prompts, images, data and other files) are
+the property of the copyright holder.
+
+No licence is granted. Without the copyright holder's prior written permission, you may not use, copy, modify,
+merge, publish, distribute, sublicense, sell, or offer as a service any part of this repository, nor create
+derivative works from it.
+
+The repository is published so that it can be read. Viewing it on GitHub, and the copies GitHub's Terms of Service
+allow on GitHub itself (such as a fork), give no further rights.
+
+The bill checker is built on the louis-agent framework's packages, which carry their own licence. Other third-party
+components keep their own licences too.
+
+For permission, open an issue at https://github.com/bosbevk/bill-checker or contact the copyright holder.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
